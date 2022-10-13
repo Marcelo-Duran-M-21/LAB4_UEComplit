@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\UEBricks_Breaker4.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{E6184583-FCB7-41ED-A215-83CF723A93EC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UEBricks_Breaker4.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\UEBricks_Breaker4Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{B7759E39-7FFB-4203-91B1-598859FAC7B8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\UEBricks_Breaker4">
+      <UniqueIdentifier>{3CC6495D-26F3-4310-A1BF-6B2B4A83F89E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\Ball.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\Ball.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\BallBound.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\BallBound.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\Brick.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\Brick.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\Paddle.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\Paddle.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\PaddlePlayerController.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\PaddlePlayerController.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\UEBricks_Breaker4\UEBricks_Breaker4.Build.cs">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\UEBricks_Breaker4.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\UEBricks_Breaker4.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\UEBricks_Breaker4GameModeBase.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\UEBricks_Breaker4GameModeBase.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
