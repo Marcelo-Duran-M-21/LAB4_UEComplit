@@ -24,7 +24,8 @@ ABallBound::ABallBound()
 void ABallBound::BeginPlay()
 {
 	Super::BeginPlay();
-
+	BoxCollision->OnComponentBeginOverlap.AddDynamic(this, &ABallBound::OnOverlapBegin);
+	PlayerControllerREF = Cast<APaddlePlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
 	
 
 }
@@ -44,6 +45,6 @@ void ABallBound::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Oth
 void ABallBound::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	//ja
 }
 
