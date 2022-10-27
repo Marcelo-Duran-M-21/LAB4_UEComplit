@@ -2,6 +2,7 @@
 
 
 #include "Paddle.h"
+#include "Ball.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Components/StaticMeshComponent.h"
 
@@ -16,8 +17,16 @@ APaddle::APaddle()
 
 	SM_Paddle->SetEnableGravity(false);
 	SM_Paddle->SetConstraintMode(EDOFMode::XZPlane);
+	
+	
 	SM_Paddle->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	SM_Paddle->SetCollisionProfileName(TEXT("PhisicActor"));
+
+	//agregamos nuestros valores de loslimites del juego
+	FieldHight = 40.f;
+	FieldWidth = 40.f;
+
+	
 
 	FloatingMovement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("Floating Pawn Movement"));
 
@@ -28,13 +37,19 @@ APaddle::APaddle()
 void APaddle::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	//tomamos ubicacion del paddle
+	CurrentLocation = this->GetActorLocation();
 }
 
 // Called every frame
 void APaddle::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	//limite del game 
+if (this->GetActorLocation().Z > FieldHight) {
+	CurrentLocation = FVector(CurrentLocation.X,0.f, FieldHight-1);
+
+	}
 
 }
 
@@ -47,6 +62,17 @@ void APaddle::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void APaddle::MoveHorizontal(float AxisValue)
 {
-	AddMovementInput(FVector(AxisValue, 0.0f, 0.0f), 1.0f, false);
+	FVector NewLocation = GetActorLocation();
+	
+	AddMovementInput(FVector(AxisValue, 0.0f, 0.f), 1.0f, true);
+}
+//aqui agregamos un vector del nuevo movimiento en vertical como nuevo movimiento de entrada
+void APaddle::MoveVer(float _VerAxisValue)
+{
+	FVector NewLocation = GetActorLocation();
+
+	AddMovementInput(FVector(0.0f, 0.0f, _VerAxisValue), 1.0f, true);
+	
+	
 }
 

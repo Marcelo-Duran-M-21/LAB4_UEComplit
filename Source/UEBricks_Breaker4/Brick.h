@@ -16,15 +16,32 @@ public:
 	ABrick();
 
 protected:
-	// Called when the game starts or when spawned
+	// Called when the game starts or when spawned  beginplay=empezar el juego 
 	virtual void BeginPlay() override;
+
+	/// <summary>
+	/// hacemos visibe con uproperty el bluprints 
+	/// </summary>
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 		UStaticMeshComponent* SM_Brick;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 		UBoxComponent* BoxCollision;
+	//modificamos el 
 
-	float SpeedModifierOnBounce = 1.01f;
+
+	// agregamos nueva propiedad a nuestro ladrillo de poder girar solo
+	UPROPERTY(EditAnywhere, Category = "Movement")
+		float PitchValue;//cabezera
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+		float YawValue;//derrape
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+		float RollValue;//rodar
+
+
+	float SpeedModifierOnBounce = 2.01f; // rebote del modificador de velocidad 
 
 	UFUNCTION()
 		void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndexType, bool bFromSweet, const FHitResult& SweepResult);

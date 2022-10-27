@@ -24,6 +24,12 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 		UFloatingPawnMovement* FloatingMovement;
 
+	UPROPERTY(EditAnywhere, Category = "Campo Game")
+		float FieldHight;
+	UPROPERTY(EditAnywhere, Category = "Campo Game")
+		float FieldWidth;
+	FVector CurrentLocation;
+
 
 public:	
 	// Called every frame
@@ -32,4 +38,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void MoveHorizontal(float AxisValue);
+
+
+
+	//Agregamos un nuevo movimiento de muesetro padel del eje vertical respecto a z
+	virtual void MoveVer(float _VerAxisValue);
 };

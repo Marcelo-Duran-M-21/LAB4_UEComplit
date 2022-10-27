@@ -71,7 +71,10 @@ public: \
 
 #define UEBricks_Breaker4_Source_UEBricks_Breaker4_Brick_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__SM_Brick() { return STRUCT_OFFSET(ABrick, SM_Brick); } \
-	FORCEINLINE static uint32 __PPO__BoxCollision() { return STRUCT_OFFSET(ABrick, BoxCollision); }
+	FORCEINLINE static uint32 __PPO__BoxCollision() { return STRUCT_OFFSET(ABrick, BoxCollision); } \
+	FORCEINLINE static uint32 __PPO__PitchValue() { return STRUCT_OFFSET(ABrick, PitchValue); } \
+	FORCEINLINE static uint32 __PPO__YawValue() { return STRUCT_OFFSET(ABrick, YawValue); } \
+	FORCEINLINE static uint32 __PPO__RollValue() { return STRUCT_OFFSET(ABrick, RollValue); }
 
 
 #define UEBricks_Breaker4_Source_UEBricks_Breaker4_Brick_h_9_PROLOG

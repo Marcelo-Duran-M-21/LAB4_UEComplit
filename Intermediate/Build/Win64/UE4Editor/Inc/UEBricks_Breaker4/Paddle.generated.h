@@ -60,7 +60,9 @@ public: \
 
 #define UEBricks_Breaker4_Source_UEBricks_Breaker4_Paddle_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__SM_Paddle() { return STRUCT_OFFSET(APaddle, SM_Paddle); } \
-	FORCEINLINE static uint32 __PPO__FloatingMovement() { return STRUCT_OFFSET(APaddle, FloatingMovement); }
+	FORCEINLINE static uint32 __PPO__FloatingMovement() { return STRUCT_OFFSET(APaddle, FloatingMovement); } \
+	FORCEINLINE static uint32 __PPO__FieldHight() { return STRUCT_OFFSET(APaddle, FieldHight); } \
+	FORCEINLINE static uint32 __PPO__FieldWidth() { return STRUCT_OFFSET(APaddle, FieldWidth); }
 
 
 #define UEBricks_Breaker4_Source_UEBricks_Breaker4_Paddle_h_9_PROLOG

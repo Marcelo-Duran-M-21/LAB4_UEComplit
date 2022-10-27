@@ -31,6 +31,9 @@ void APaddlePlayerController::SetupInputComponent()
 	EnableInput(this);
 
 	InputComponent->BindAxis("MoveHorizontal", this, &APaddlePlayerController::MoveHorizontal);
+
+	//configuramos la entrada de component para nuestro movimiento Vertical
+	InputComponent->BindAxis("MoveVer", this, &APaddlePlayerController::MoveVer);
 	InputComponent->BindAction("Launch", IE_Pressed, this, &APaddlePlayerController::Lanch);
 
 
@@ -45,6 +48,14 @@ void APaddlePlayerController::MoveHorizontal(float AxisValue)
 		MyPawn->MoveHorizontal(AxisValue);
 	}
 
+}// agregamos el movimiento y declaramos en nuestro player controller
+
+void APaddlePlayerController::MoveVer(float _VerAxisValue)
+{
+	auto MyPawn = Cast<APaddle>(GetPawn());
+	if (MyPawn) {
+		MyPawn->MoveVer( _VerAxisValue);
+	}
 }
 
 void APaddlePlayerController::Lanch()
@@ -60,6 +71,6 @@ void APaddlePlayerController::SpawnNewBall()
 
 	if (BallObj) {
 		MyBall = GetWorld()->SpawnActor<ABall>(BallObj, SpawnLocation, SpawnRotator, SpawnInfo);
-	}
+	} 
 
 }

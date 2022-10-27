@@ -93,7 +93,9 @@ void EmptyLinkFunctionForGeneratedCodePaddlePlayerController() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APaddlePlayerController_Statics::NewProp_BallObj_MetaData[] = {
 		{ "Category", "PaddlePlayerController" },
+		{ "Comment", "//aqui ya estamos spawnwadno nuestro ball pimero creando pero nuestro template de tipoa ABall \n" },
 		{ "ModuleRelativePath", "PaddlePlayerController.h" },
+		{ "ToolTip", "aqui ya estamos spawnwadno nuestro ball pimero creando pero nuestro template de tipoa ABall" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APaddlePlayerController_Statics::NewProp_BallObj = { "BallObj", nullptr, (EPropertyFlags)0x0024080000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APaddlePlayerController, BallObj), Z_Construct_UClass_ABall_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APaddlePlayerController_Statics::NewProp_BallObj_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APaddlePlayerController_Statics::NewProp_BallObj_MetaData)) };
@@ -127,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodePaddlePlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APaddlePlayerController, 108582192);
+	IMPLEMENT_CLASS(APaddlePlayerController, 2883890402);
 	template<> UEBRICKS_BREAKER4_API UClass* StaticClass<APaddlePlayerController>()
 	{
 		return APaddlePlayerController::StaticClass();

@@ -112,7 +112,9 @@ void EmptyLinkFunctionForGeneratedCodeBrick() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABrick_OnOverlapBegin_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// rebote del modificador de velocidad \n" },
 		{ "ModuleRelativePath", "Brick.h" },
+		{ "ToolTip", "rebote del modificador de velocidad" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABrick_OnOverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABrick, nullptr, "OnOverlapBegin", nullptr, nullptr, sizeof(Brick_eventOnOverlapBegin_Parms), Z_Construct_UFunction_ABrick_OnOverlapBegin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABrick_OnOverlapBegin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABrick_OnOverlapBegin_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ABrick_OnOverlapBegin_Statics::Function_MetaDataParams)) };
@@ -144,6 +146,18 @@ void EmptyLinkFunctionForGeneratedCodeBrick() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BoxCollision_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BoxCollision;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PitchValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_PitchValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_YawValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_YawValue;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RollValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RollValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -153,7 +167,7 @@ void EmptyLinkFunctionForGeneratedCodeBrick() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_UEBricks_Breaker4,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABrick_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ABrick_OnOverlapBegin, "OnOverlapBegin" }, // 1152061502
+		{ &Z_Construct_UFunction_ABrick_OnOverlapBegin, "OnOverlapBegin" }, // 4276854511
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABrick_Statics::Class_MetaDataParams[] = {
@@ -164,8 +178,10 @@ void EmptyLinkFunctionForGeneratedCodeBrick() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABrick_Statics::NewProp_SM_Brick_MetaData[] = {
 		{ "Category", "Brick" },
+		{ "Comment", "/// <summary>\n/// hacemos visibe con uproperty el bluprints \n/// </summary>\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Brick.h" },
+		{ "ToolTip", "<summary>\nhacemos visibe con uproperty el bluprints\n</summary>" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABrick_Statics::NewProp_SM_Brick = { "SM_Brick", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABrick, SM_Brick), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABrick_Statics::NewProp_SM_Brick_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABrick_Statics::NewProp_SM_Brick_MetaData)) };
@@ -177,9 +193,39 @@ void EmptyLinkFunctionForGeneratedCodeBrick() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABrick_Statics::NewProp_BoxCollision = { "BoxCollision", nullptr, (EPropertyFlags)0x00200800000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABrick, BoxCollision), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABrick_Statics::NewProp_BoxCollision_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABrick_Statics::NewProp_BoxCollision_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABrick_Statics::NewProp_PitchValue_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "Comment", "// agregamos nueva propiedad a nuestro ladrillo de poder girar solo\n" },
+		{ "ModuleRelativePath", "Brick.h" },
+		{ "ToolTip", "agregamos nueva propiedad a nuestro ladrillo de poder girar solo" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABrick_Statics::NewProp_PitchValue = { "PitchValue", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABrick, PitchValue), METADATA_PARAMS(Z_Construct_UClass_ABrick_Statics::NewProp_PitchValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABrick_Statics::NewProp_PitchValue_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABrick_Statics::NewProp_YawValue_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "Comment", "//cabezera\n" },
+		{ "ModuleRelativePath", "Brick.h" },
+		{ "ToolTip", "cabezera" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABrick_Statics::NewProp_YawValue = { "YawValue", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABrick, YawValue), METADATA_PARAMS(Z_Construct_UClass_ABrick_Statics::NewProp_YawValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABrick_Statics::NewProp_YawValue_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABrick_Statics::NewProp_RollValue_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "Comment", "//derrape\n" },
+		{ "ModuleRelativePath", "Brick.h" },
+		{ "ToolTip", "derrape" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABrick_Statics::NewProp_RollValue = { "RollValue", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABrick, RollValue), METADATA_PARAMS(Z_Construct_UClass_ABrick_Statics::NewProp_RollValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABrick_Statics::NewProp_RollValue_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABrick_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABrick_Statics::NewProp_SM_Brick,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABrick_Statics::NewProp_BoxCollision,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABrick_Statics::NewProp_PitchValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABrick_Statics::NewProp_YawValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABrick_Statics::NewProp_RollValue,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABrick_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABrick>::IsAbstract,
@@ -208,7 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeBrick() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABrick, 1918286895);
+	IMPLEMENT_CLASS(ABrick, 1486143717);
 	template<> UEBRICKS_BREAKER4_API UClass* StaticClass<ABrick>()
 	{
 		return ABrick::StaticClass();

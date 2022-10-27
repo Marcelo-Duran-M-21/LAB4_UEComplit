@@ -23,14 +23,16 @@ class UEBRICKS_BREAKER4_API APaddlePlayerController : public APlayerController
 	protected:
 		virtual void BeginPlay() override;
 		void MoveHorizontal(float AxisValue);
+		//new 
+		void MoveVer(float _VerAxisValue);
 		void Lanch();
-
+		//aqui ya estamos spawnwadno nuestro ball pimero creando pero nuestro template de tipoa ABall 
 		UPROPERTY(EditAnywhere)
 			TSubclassOf<ABall> BallObj;
 
 		ABall* MyBall;
 		FVector SpawnLocation = FVector(10.0f, 0.0f, 40.0f);
-		FRotator SpawnRotator = FRotator(0.0f, 0.0f, 0.0f);
+		FRotator SpawnRotator = FRotator(32.0f, 90.0f, 8.0f);
 		FActorSpawnParameters SpawnInfo;
 
 		public:

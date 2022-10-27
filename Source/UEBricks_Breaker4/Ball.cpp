@@ -21,14 +21,22 @@ ABall::ABall()
 	SM_Ball->SetConstraintMode(EDOFMode::XZPlane);
 	SM_Ball->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	SM_Ball->SetCollisionProfileName(TEXT("PhysicsActor"));
-
+	
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement "));
+	//new implementation de mi projectile // velocidad inicial projectile
+	ProjectileMovement->InitialSpeed = 18.f;
+	// agregamos maxima velocidad 
+	ProjectileMovement->MaxSpeed = 1000.f;
+	//projectile sigue la velocidad de rotacion 
+	ProjectileMovement->bRotationFollowsVelocity = true;
+	ProjectileMovement->bShouldBounce = false;
+	//agregamos velocidad cuando el projectile choca en eje z
+	ProjectileMovement->Velocity.Z = 500.f;
 
-	ProjectileMovement->bShouldBounce = true;
-	ProjectileMovement->Bounciness = 1.1f;
+	ProjectileMovement->Bounciness = 3.1f;
 	ProjectileMovement->Friction = 0.0f;
-	ProjectileMovement->Velocity.X = 0.0f;
-
+	ProjectileMovement->Velocity.X = 12.0f;
+	
 }
 
 // Called when the game starts or when spawned
@@ -48,11 +56,20 @@ void ABall::Tick(float DeltaTime)
 void ABall::Launch()
 {
 	if (!BallLaunched) {
-		SM_Ball->AddImpulse(FVector(140.0f, 0.0f, 130.0f), FName(), true);
+		SM_Ball->AddImpulse(FVector(200.0f, 60.0f, 200.f), FName(), true);
+		//agregamos impulso angular para el projectile
+		SM_Ball->AddAngularImpulse(FVector(90.f));
+		//agregamosiluminacion de campo de distancia 
+		SM_Ball->bAffectDistanceFieldLighting = true;
+		// agregamos torque al projectile
+		SM_Ball->AddTorque(FVector(23.f), FName(), true);
+		SM_Ball->bReplicatePhysicsToAutonomousProxy = true;
+		
 		BallLaunched = true;
 	}
 
 }
+
 
 UStaticMeshComponent* ABall::GetBall()
 {

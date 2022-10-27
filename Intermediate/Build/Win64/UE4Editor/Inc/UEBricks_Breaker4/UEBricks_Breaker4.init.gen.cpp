@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeUEBricks_Breaker4_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xE9587C38,
+				0x752F96D3,
 				0x2E31C6BF,
 				METADATA_PARAMS(nullptr, 0)
 			};
