@@ -2,7 +2,8 @@
 
 
 #include "Paddle.h"
-#include "Ball.h"
+#include "Ball.h" 
+#include "Kismet/GameplayStatics.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Components/StaticMeshComponent.h"
 
@@ -22,13 +23,38 @@ APaddle::APaddle()
 	SM_Paddle->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	SM_Paddle->SetCollisionProfileName(TEXT("PhisicActor"));
 
-	//agregamos nuestros valores de loslimites del juego
+	//agregamos nuestros valores de los limites del juego
 	FieldHight = 40.f;
 	FieldWidth = 40.f;
 
 	
 
 	FloatingMovement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("Floating Pawn Movement"));
+
+
+
+
+	TArray<AActor*> Instances;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(),
+		
+		APaddle::StaticClass(), Instances);
+	
+	
+
+	
+	int i = 0;
+		if (Instances.Num() > 2)
+		{
+			//If exist at least one of them, set the instance with the first found one
+			Instance = Cast<APaddle>(Instances[i]);
+			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow,
+				FString::Printf(TEXT("%s already exists"),
+					*Instance->GetName()));
+			//Then Destroy this Actor
+			Destroy();
+			i++;
+		}
+	
 
 
 }
@@ -39,12 +65,21 @@ void APaddle::BeginPlay()
 	Super::BeginPlay();
 	//tomamos ubicacion del paddle
 	CurrentLocation = this->GetActorLocation();
+
+
+	
 }
+
+
+
+
 
 // Called every frame
 void APaddle::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
+	
 	//limite del game 
 if (this->GetActorLocation().Z > FieldHight) {
 	CurrentLocation = FVector(CurrentLocation.X,0.f, FieldHight-1);

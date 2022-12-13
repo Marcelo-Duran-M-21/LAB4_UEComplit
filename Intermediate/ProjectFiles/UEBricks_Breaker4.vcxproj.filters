@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\UEBricks_Breaker4.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E6184583-FCB7-41ED-A215-83CF723A93EC}</UniqueIdentifier>
+      <UniqueIdentifier>{20221FD1-F568-456D-BF74-77612B1640B6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\UEBricks_Breaker4.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\UEBricks_Breaker4Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{B7759E39-7FFB-4203-91B1-598859FAC7B8}</UniqueIdentifier>
+      <UniqueIdentifier>{66174421-6CF7-47FB-A8D9-6E2EC970CEA0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +29,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\UEBricks_Breaker4">
-      <UniqueIdentifier>{3CC6495D-26F3-4310-A1BF-6B2B4A83F89E}</UniqueIdentifier>
+      <UniqueIdentifier>{47D435D7-4AD3-410E-BFA8-5DCDBB2C6FCA}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\UEBricks_Breaker4\Ball.cpp">
       <Filter>Source\UEBricks_Breaker4</Filter>
@@ -47,6 +49,24 @@
     <ClInclude Include="..\..\Source\UEBricks_Breaker4\Brick.h">
       <Filter>Source\UEBricks_Breaker4</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\CapAyuda.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\CapAyuda.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\ClockTower.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\ClockTower.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\Morph.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\Morph.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UEBricks_Breaker4\Paddle.cpp">
       <Filter>Source\UEBricks_Breaker4</Filter>
     </ClCompile>
@@ -57,6 +77,24 @@
       <Filter>Source\UEBricks_Breaker4</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\UEBricks_Breaker4\PaddlePlayerController.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\PA_BuilderBossQueen.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\PA_BuilderBossQueen.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\Publisher.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\Publisher.h">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEBricks_Breaker4\Suscriber.cpp">
+      <Filter>Source\UEBricks_Breaker4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEBricks_Breaker4\Suscriber.h">
       <Filter>Source\UEBricks_Breaker4</Filter>
     </ClInclude>
     <None Include="..\..\Source\UEBricks_Breaker4\UEBricks_Breaker4.Build.cs">

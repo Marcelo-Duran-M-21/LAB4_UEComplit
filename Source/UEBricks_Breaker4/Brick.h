@@ -13,6 +13,7 @@ class UEBRICKS_BREAKER4_API ABrick : public AActor
 	
 public:	
 	// Sets default values for this actor's properties
+
 	ABrick();
 
 protected:

@@ -16,3 +16,5 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
 C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Source\UEBricks_Breaker4\PaddlePlayerController.h
 C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Intermediate\Build\Win64\UE4Editor\Inc\UEBricks_Breaker4\PaddlePlayerController.generated.h
+C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Source\UEBricks_Breaker4\PA_BuilderBossQueen.h
+C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Intermediate\Build\Win64\UE4Editor\Inc\UEBricks_Breaker4\PA_BuilderBossQueen.generated.h

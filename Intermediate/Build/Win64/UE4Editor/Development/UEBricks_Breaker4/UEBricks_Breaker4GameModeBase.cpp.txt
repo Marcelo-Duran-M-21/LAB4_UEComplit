@@ -5,3 +5,7 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Intermediate\Build\Win64\UE4Editor\Inc\UEBricks_Breaker4\UEBricks_Breaker4GameModeBase.generated.h
+C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Source\UEBricks_Breaker4\Paddle.h
+C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Intermediate\Build\Win64\UE4Editor\Inc\UEBricks_Breaker4\Paddle.generated.h
+C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Source\UEBricks_Breaker4\Ball.h
+C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Intermediate\Build\Win64\UE4Editor\Inc\UEBricks_Breaker4\Ball.generated.h

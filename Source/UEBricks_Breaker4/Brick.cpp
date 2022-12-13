@@ -80,7 +80,7 @@ void ABrick::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	// FQuat nos crea un puento de flotacion en 3d 
+	// FQuat nos crea un punto de flotacion en 3d 
 	FQuat QuatRotation = FQuat(FRotator(PitchValue, YawValue, RollValue));
 	AddActorLocalRotation(QuatRotation, false, 0, ETeleportType::None);
 }

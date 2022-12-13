@@ -12,6 +12,7 @@
 
 APaddlePlayerController::APaddlePlayerController()
 {
+
 }
 
 void APaddlePlayerController::BeginPlay()
@@ -63,12 +64,18 @@ void APaddlePlayerController::Lanch()
 	MyBall->Launch();
 }
 
+
+
+
+
 void APaddlePlayerController::SpawnNewBall()
 {
 	if (!MyBall) {
 		MyBall = nullptr;
+		
 	}
-
+	
+	
 	if (BallObj) {
 		MyBall = GetWorld()->SpawnActor<ABall>(BallObj, SpawnLocation, SpawnRotator, SpawnInfo);
 	} 

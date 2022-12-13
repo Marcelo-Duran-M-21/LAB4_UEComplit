@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeUEBricks_Breaker4GameModeBase() {}
 	UEBRICKS_BREAKER4_API UClass* Z_Construct_UClass_AUEBricks_Breaker4GameModeBase();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_UEBricks_Breaker4();
+	UEBRICKS_BREAKER4_API UClass* Z_Construct_UClass_APaddle_NoRegister();
 // End Cross Module References
 	void AUEBricks_Breaker4GameModeBase::StaticRegisterNativesAUEBricks_Breaker4GameModeBase()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeUEBricks_Breaker4GameModeBase() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Paddle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Paddle;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -47,6 +53,17 @@ void EmptyLinkFunctionForGeneratedCodeUEBricks_Breaker4GameModeBase() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::NewProp_Paddle_MetaData[] = {
+		{ "Comment", "//The Inventory of this Actor\n// creamos la clase del singleton o inventory del libro unreal engine 5 game programing  desing patterns\n" },
+		{ "ModuleRelativePath", "UEBricks_Breaker4GameModeBase.h" },
+		{ "ToolTip", "The Inventory of this Actor\n creamos la clase del singleton o inventory del libro unreal engine 5 game programing  desing patterns" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::NewProp_Paddle = { "Paddle", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AUEBricks_Breaker4GameModeBase, Paddle), Z_Construct_UClass_APaddle_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::NewProp_Paddle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::NewProp_Paddle_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::NewProp_Paddle,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AUEBricks_Breaker4GameModeBase>::IsAbstract,
 	};
@@ -56,11 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeUEBricks_Breaker4GameModeBase() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::PropPointers),
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AUEBricks_Breaker4GameModeBase_Statics::Class_MetaDataParams))
@@ -74,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeUEBricks_Breaker4GameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AUEBricks_Breaker4GameModeBase, 2556582834);
+	IMPLEMENT_CLASS(AUEBricks_Breaker4GameModeBase, 3154810085);
 	template<> UEBRICKS_BREAKER4_API UClass* StaticClass<AUEBricks_Breaker4GameModeBase>()
 	{
 		return AUEBricks_Breaker4GameModeBase::StaticClass();

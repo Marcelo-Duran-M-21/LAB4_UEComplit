@@ -1,0 +1,3 @@
+C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Intermediate\Build\Win64\UE4Editor\Development\UEBricks_Breaker4\Definitions.UEBricks_Breaker4.h
+C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Source\UEBricks_Breaker4\PA_BuilderBossQueen.h
+C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Intermediate\Build\Win64\UE4Editor\Inc\UEBricks_Breaker4\PA_BuilderBossQueen.generated.h

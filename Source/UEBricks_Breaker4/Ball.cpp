@@ -20,6 +20,8 @@ ABall::ABall()
 	SM_Ball->SetEnableGravity(false);
 	SM_Ball->SetConstraintMode(EDOFMode::XZPlane);
 	SM_Ball->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	
+	
 	SM_Ball->SetCollisionProfileName(TEXT("PhysicsActor"));
 	
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement "));
@@ -36,6 +38,9 @@ ABall::ABall()
 	ProjectileMovement->Bounciness = 3.1f;
 	ProjectileMovement->Friction = 0.0f;
 	ProjectileMovement->Velocity.X = 12.0f;
+
+	
+	
 	
 }
 
@@ -50,7 +55,7 @@ void ABall::BeginPlay()
 void ABall::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
 }
 
 void ABall::Launch()
@@ -60,12 +65,14 @@ void ABall::Launch()
 		//agregamos impulso angular para el projectile
 		SM_Ball->AddAngularImpulse(FVector(90.f));
 		//agregamosiluminacion de campo de distancia 
-		SM_Ball->bAffectDistanceFieldLighting = true;
+		SM_Ball->bAffectDistanceFieldLighting = false;
 		// agregamos torque al projectile
 		SM_Ball->AddTorque(FVector(23.f), FName(), true);
 		SM_Ball->bReplicatePhysicsToAutonomousProxy = true;
 		
 		BallLaunched = true;
+		
+		
 	}
 
 }

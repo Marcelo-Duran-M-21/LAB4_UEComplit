@@ -6,6 +6,7 @@
 #include "Components/BoxComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "PaddlePlayerController.h"
+#include "PA_BuilderBossQueen.h"
 
 
 
@@ -46,5 +47,5 @@ void ABallBound::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	//ja
-}
+}	
 

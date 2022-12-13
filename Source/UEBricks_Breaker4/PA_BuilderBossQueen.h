@@ -21,5 +21,18 @@ class UEBRICKS_BREAKER4_API IPA_BuilderBossQueen
 	GENERATED_BODY()
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
-public:
+protected:
+	FString enemy;
+public:	
+	
+	virtual void BuildMeshEnemy(FString t) = 0;
+	virtual void BuildVelocidadShip(FString t) = 0;
+	virtual void lifetotal(FString t) = 0;
+	virtual void pointSpawnEnemy(FString t) = 0;
+	virtual void displaceEnemy (FString t)=0;
+	FString getEnemyBuilder() 
+	{
+		return enemy;
+	};
+
 };

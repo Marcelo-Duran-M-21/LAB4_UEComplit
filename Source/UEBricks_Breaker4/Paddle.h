@@ -29,7 +29,11 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Campo Game")
 		float FieldWidth;
 	FVector CurrentLocation;
+	
+	APaddle* Instance;
 
+
+	int numPaddle=0;
 
 public:	
 	// Called every frame

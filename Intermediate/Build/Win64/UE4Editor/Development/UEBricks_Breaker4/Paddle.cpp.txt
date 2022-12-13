@@ -3,6 +3,15 @@ C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Sourc
 C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Intermediate\Build\Win64\UE4Editor\Inc\UEBricks_Breaker4\Paddle.generated.h
 C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Source\UEBricks_Breaker4\Ball.h
 C:\Users\rodri\OneDrive\Escritorio\Game BricksBreaker UE\UEBricks_Breaker4\Intermediate\Build\Win64\UE4Editor\Inc\UEBricks_Breaker4\Ball.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/FloatingPawnMovement.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PawnMovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h

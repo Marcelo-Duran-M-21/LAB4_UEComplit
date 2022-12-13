@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Suscriber.h"
 #include "Publisher.generated.h"
+#include "Paddle.h"
 
 UCLASS()
 class UEBRICKS_BREAKER4_API APublisher : public AActor
@@ -22,5 +24,18 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+private:
+	UPROPERTY()
+		TArray<AActor*> Subscribers = TArray<AActor*>();
+	public:
+		//Add the pased Subscriber to the list
+		virtual void Subscribe(AActor* Subscriber);
+		//Remove the passed Subscriber from the list
+		virtual void UnSubscribe(AActor* SubscriberToRemove);
+		//Notify all the Subscribers that something has changed
+		virtual void NotifySubscribers();
+
+
 
 };

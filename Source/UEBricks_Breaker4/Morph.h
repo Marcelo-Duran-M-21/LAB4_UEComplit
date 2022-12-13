@@ -22,4 +22,7 @@ class UEBRICKS_BREAKER4_API IMorph
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+	virtual void Morph() = 0; // sera transformar  o el cambio de nuestra clase de capsula para que asi genere un nuevo paddle al ser comido 
+
+
 };

@@ -26,6 +26,8 @@ class UEBRICKS_BREAKER4_API APaddlePlayerController : public APlayerController
 		//new 
 		void MoveVer(float _VerAxisValue);
 		void Lanch();
+		
+		
 		//aqui ya estamos spawnwadno nuestro ball pimero creando pero nuestro template de tipoa ABall 
 		UPROPERTY(EditAnywhere)
 			TSubclassOf<ABall> BallObj;

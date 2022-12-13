@@ -36,7 +36,7 @@ public: \
 
 #define UEBricks_Breaker4_Source_UEBricks_Breaker4_UEBricks_Breaker4GameModeBase_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AUEBricks_Breaker4GameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AUEBricks_Breaker4GameModeBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AUEBricks_Breaker4GameModeBase) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AUEBricks_Breaker4GameModeBase); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AUEBricks_Breaker4GameModeBase); \
@@ -48,8 +48,6 @@ public:
 
 
 #define UEBricks_Breaker4_Source_UEBricks_Breaker4_UEBricks_Breaker4GameModeBase_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AUEBricks_Breaker4GameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AUEBricks_Breaker4GameModeBase(AUEBricks_Breaker4GameModeBase&&); \
@@ -57,10 +55,13 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AUEBricks_Breaker4GameModeBase); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AUEBricks_Breaker4GameModeBase); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AUEBricks_Breaker4GameModeBase)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AUEBricks_Breaker4GameModeBase)
 
 
-#define UEBricks_Breaker4_Source_UEBricks_Breaker4_UEBricks_Breaker4GameModeBase_h_15_PRIVATE_PROPERTY_OFFSET
+#define UEBricks_Breaker4_Source_UEBricks_Breaker4_UEBricks_Breaker4GameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__Paddle() { return STRUCT_OFFSET(AUEBricks_Breaker4GameModeBase, Paddle); }
+
+
 #define UEBricks_Breaker4_Source_UEBricks_Breaker4_UEBricks_Breaker4GameModeBase_h_12_PROLOG
 #define UEBricks_Breaker4_Source_UEBricks_Breaker4_UEBricks_Breaker4GameModeBase_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
